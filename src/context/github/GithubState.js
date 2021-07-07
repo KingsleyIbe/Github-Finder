@@ -83,7 +83,7 @@ const setLoading = () => dispatch({ type: SET_LOADING });
         <GithubContext.Provider
         value={{
             users: state.users,
-            user: [state.user],
+            user: state.user,
             repos: state.repos,
             loading: state.loading,
             searchUsers,
