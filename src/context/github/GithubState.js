@@ -51,7 +51,7 @@ const GithubState = props => {
 // Get User 
 const getUser = async (username) => {
       setLoading();
-//       const res = await github.get(`/search/user?q=${username}?client_id=${githubToken}`);
+
     const res = await github.get(`/users/${username}?`);
     
     dispatch({
@@ -67,12 +67,7 @@ const getUserRepos = async (username) => {
     const res = await github.get(
       `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc`
     );
-//     const res = await github.get(
-//     //   `/search/users?q=${username}/repos?per_page=5&sort=created:asc`
-//     `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${githubToken}`
-//     );
-    // setRepos(res.data);
-    // setLoading(false);
+
     dispatch({
         type: GET_REPOS,
         payLoad: res.data
@@ -80,12 +75,7 @@ const getUserRepos = async (username) => {
   };
 //Clear users 
 const clearUsers = () => dispatch({ type: CLEAR_USERS});
-//  {
-    //   setUsers([]);
-    //   setLoading(false);
-    // };
 
-//Set loading 
 
 const setLoading = () => dispatch({ type: SET_LOADING });
 
