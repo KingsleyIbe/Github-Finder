@@ -17,7 +17,7 @@ const Search = () => {
 
         }else{
             githubContext.searchUsers(text);
-            setText('');
+            setText(text);
         }
        
     };
