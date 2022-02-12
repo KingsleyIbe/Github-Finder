@@ -25,7 +25,7 @@ The application was built using Javascript, React.
 
 ## Live Demo
 
-- [Github-Pages Live Demo Link](https://kingsleyibe.github.io/Github-Finder/)
+- [Live Demo](https://kingsleyibe.github.io/Github-Finder/)
 
 
 ## Getting Started
